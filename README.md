@@ -30,3 +30,7 @@ Firefox css stylesheets for the dark space theme. Matching many more UI elements
 
 ![screenshot](screenshots/sidebar.png)
 
+![screenshot](screenshots/container-tab.gif)
+
+Thanks to @xarantolus for the container-tabs indicator.\
+Thanks to @nicoth-in for the dark space theme.
