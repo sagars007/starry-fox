@@ -9,4 +9,4 @@ Firefox css stylesheets for the dark space theme. Matching many more UI elements
 
 * For dark mode tooltips, [fx-autoconfig userChrome.js manager](https://github.com/MrOtherGuy/fx-autoconfig) must be setup. Dark mode theme matching tooltips codes in chrome/resources/userChrome.ag.css
 
-
+* About config changes are optional. Modify with caution.
