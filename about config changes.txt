@@ -1,3 +1,5 @@
+/* About config changes. Change with caution. */
+
 -about:config > browser.urlbar.update1 = false /*smaller search engine suggestion prompt */
 
 -Change in about config for smooth edge like scrolling:
