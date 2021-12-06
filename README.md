@@ -11,4 +11,22 @@ Firefox css stylesheets for the dark space theme. Matching many more UI elements
 
 * For dark mode tooltips, [fx-autoconfig userChrome.js manager](https://github.com/MrOtherGuy/fx-autoconfig) must be setup. Codes for dark mode tooltips in chrome/resources/userChrome.ag.css
 
+* Unread tabs indicator functionality requires [Tab Flag extension](https://addons.mozilla.org/en-US/firefox/addon/tab-flag/).
+
+* Minimalistic dark scroll bars using the [Dark Scroll extension](https://addons.mozilla.org/en-US/firefox/addon/dark-scroll-for-tweetdeck/).
+
 * About config changes are optional. Modify with caution.
+
+
+![screenshot](screenshots/newtabpage.png)
+
+![screenshot](screenshots/urlbar-results.png)
+
+![screenshot](screenshots/new-buttons.png)
+
+![screenshot](screenshots/dialog-boxes-theme.png)
+
+![screenshot](screenshots/findbar.png)
+
+![screenshot](screenshots/sidebar.png)
+
