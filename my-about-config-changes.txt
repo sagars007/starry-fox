@@ -1,6 +1,6 @@
 /* About config changes. Change with caution. */
 
--about:config > browser.urlbar.update1 = false /*smaller search engine suggestion prompt */
+-about:config > browser.urlbar.update1 = false    /*smaller search engine suggestion prompt */
 
 -Change in about config for smooth edge like scrolling:
 general.smoothScroll.msdPhysics.enabled = true
@@ -23,7 +23,7 @@ full-screen-api.transition-duration.leave = 50 50
 extensions.pocket.enabled = false
 
 
-toolkit.legacyUserProfileCustomizations.stylesheets=	true
+toolkit.legacyUserProfileCustomizations.stylesheets=	true    /* enables usage of userChrome.css */
 browser.aboutConfig.showWarning=	false
 app.update.service.enabled=	false
 browser.backspace_action=	0
@@ -61,4 +61,4 @@ font.name.serif.x-western=	Segoe UI Variable Small
 media.videocontrols.picture-in-picture.video-toggle.has-used=	true
 media.videocontrols.picture-in-picture.video-toggle.position=	top
 ui.systemUsesDarkTheme=	1
-alerts.useSystemBackend=  true  /*html5 web alerts follow system flyouts*/
+alerts.useSystemBackend=  true    /*html5 web alerts follow system flyouts*/
