@@ -18,6 +18,8 @@ Firefox css stylesheets for the dark space theme. Matching many more UI elements
 * About config changes are optional. Modify with caution.
 
 
+![screenshot](screenshots/starry-fox-pic.png)
+
 ![screenshot](screenshots/newtabpage.png)
 
 ![screenshot](screenshots/urlbar-results.png)
@@ -29,7 +31,6 @@ Firefox css stylesheets for the dark space theme. Matching many more UI elements
 ![screenshot](screenshots/findbar.png)
 
 ![screenshot](screenshots/sidebar.png)
-
 ![screenshot](screenshots/container-tab.gif)
 
 Thanks to @xarantolus for the container-tabs indicator.\
