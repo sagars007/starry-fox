@@ -1013,4 +1013,8 @@ menu:not([_moz-menuactive="true"]), menuitem:not([_moz-menuactive="true"]){
 		--menu-border-color: var(--panel-separator-color,Field) !important;
 	  }
 	
+	#alertImage {
+  		border-radius: 4px !important;
+	}
+	
   }
