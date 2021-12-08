@@ -30,6 +30,8 @@ Firefox css stylesheets for the dark space theme. Matching many more UI elements
 
 ![screenshot](screenshots/findbar.png)
 
+![screenshot](screenshots/html5-notif-dark.png)
+
 ![screenshot](screenshots/sidebar.png)
 ![screenshot](screenshots/container-tab.gif)
 
