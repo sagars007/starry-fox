@@ -122,14 +122,14 @@
 	}
 	
 	.tabbrowser-tab[class*="identity-color-"] .tab-background {
-		border-right: solid 2px var(--identity-icon-color) !important;
-		border-left: solid 2px var(--identity-icon-color) !important;
+		border-right: solid 3px var(--identity-icon-color) !important;
+		border-left: solid 3px var(--identity-icon-color) !important;
 		transition: all .15s ease-in-out !important;
 	}
 	
 	.tabbrowser-tab[class*="identity-color-"] .tab-background[selected="true"] {
-		border-right: solid 4px var(--identity-icon-color) !important;
-		border-left: solid 4px var(--identity-icon-color) !important;
+		border-right: solid 5px var(--identity-icon-color) !important;
+		border-left: solid 5px var(--identity-icon-color) !important;
 	}
 
 /*container tab label color when selected */
@@ -877,6 +877,7 @@ menu:not([_moz-menuactive="true"]), menuitem:not([_moz-menuactive="true"]){
   }
   
   /* green tab attention icon */
+  /* in console for testing: var titlechanger = window.setInterval(function(){document.title=document.title+'0';}, 5000); */
   .tabbrowser-tab:is([image], [pinned]) > .tab-stack > .tab-content[attention]:not([selected="true"]), .tabbrowser-tab > .tab-stack > .tab-content[pinned][titlechanged]:not([selected="true"]) {
 	background-position-x: left 2px !important;
 	background-position-y: bottom 12.5px !important;
@@ -971,3 +972,45 @@ menu:not([_moz-menuactive="true"]), menuitem:not([_moz-menuactive="true"]){
 				  }
 
 	}
+
+/* HTML5 dark mode web notifs */
+@-moz-document url("chrome://global/content/alerts/alert.xhtml") {
+	#alertBox {
+	  border-color: rgb(48, 48, 48, .4) !important;
+	  border-radius: 4px !important;
+	  background-color: #101010 !important;
+	  color: rgba(255, 255, 255, 0.800000011920929) !important;
+	}
+
+	#alertSourceLabel {
+		color: #9400ff !important;
+		
+		/*proton color: rgb(5,209,241)*/
+	  }
+
+	#alertSettings {
+	  -moz-context-properties: fill, fill-opacity !important;
+	  padding: 3px !important;
+	  margin: 0px 2px -3px 0px !important;
+	  color: inherit !important;
+	  border-radius: 4px !important;
+	  transform: scale(0.91, 0.91) !important;
+	}
+
+	#alertSettings:hover,  #alertSettings[open] {
+	  background-color: #313131 !important; 
+	}
+
+	menupopup {
+		
+		--panel-color: rgba(255, 255, 255, 0.800000011920929) !important;
+		--panel-border-color: rgb(48, 48, 48) !important;
+		--panel-background: #101010 !important;
+		--menuitem-hover-background-color: #313131 !important;   
+		--menuitem-disabled-hover-background-color: #1f1f1f !important;                    
+		--menu-color: rgba(255, 255, 255, 0.8) !important;                                                           
+		--menu-disabled-color:color-mix(in srgb, #101010 65%, rgb(255, 255, 255))!important; 
+		--menu-border-color: var(--panel-separator-color,Field) !important;
+	  }
+	
+  }
