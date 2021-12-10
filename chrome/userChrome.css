@@ -1018,3 +1018,9 @@ menu:not([_moz-menuactive="true"]), menuitem:not([_moz-menuactive="true"]){
 	}
 	
   }
+
+  /*confirmation notifs- tab sent, bookmark added...*/
+  #confirmation-hint {
+	--arrowpanel-background: #9400ff !important;
+	--arrowpanel-border-color: #9400ff !important;
+  }
