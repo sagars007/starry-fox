@@ -15,9 +15,18 @@ Firefox css stylesheets for the dark space theme. Matching many more UI elements
 
 * Minimalistic dark scroll bars using the [Dark Scroll extension](https://addons.mozilla.org/en-US/firefox/addon/dark-scroll-for-tweetdeck/).
 
+* Starting from Nightly builds 97.0a1 (18 dec 2021), scrollbar styles can be modified using ```widget.non-native-theme.scrollbar.style``` in about:config.
+  * Corresponding values:
+  ```
+  0. Default platform scrollbar style.
+  1. macOS scrollbars
+  2. GTK scrollbars
+  3. Android scrollbars
+  4. Windows 10 scrollbars
+  5. Windows 11 scrollbars
+  ```
+  
 * About config changes are optional. Modify with caution.
-
-
 ![screenshot](screenshots/starry-fox-pic.png)
 
 ![screenshot](screenshots/starry-fox-gif-25fps-compress.gif)
