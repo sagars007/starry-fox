@@ -25,8 +25,8 @@ Firefox css stylesheets for the dark space theme. Matching many more UI elements
   4. Windows 10 scrollbars
   5. Windows 11 scrollbars
   ```
-  
 * About config changes are optional. Modify with caution.
+
 ![screenshot](screenshots/starry-fox-pic.png)
 
 ![screenshot](screenshots/starry-fox-gif-25fps-compress.gif)
