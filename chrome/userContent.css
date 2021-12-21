@@ -77,6 +77,15 @@
 		width: 134px !important;
 	}
 
+	.search-wrapper .logo-and-wordmark .logo {
+		background: url("images/nightly-logo.png") no-repeat center !important;
+		background-size: auto !important;
+		background-size: 82px !important;
+		display: inline-block !important;
+		height: 82px !important;
+		width: 82px !important;
+	  }
+	
 	body {
 		 background-color: #000000 !important;
 		 background: url("images/Animation_Of_Stars-25-fps-compress.gif") no-repeat fixed !important;
