@@ -7,7 +7,8 @@ Firefox css stylesheets for the dark space theme. Matching many more UI elements
 
 * Works best in proton UI compact mode dark theme. Tested in Firefox Nightly, Windows 11.
 
-* How to use userChrome.css: https://www.userchrome.org/how-create-userchrome-css.html
+* How to use userChrome/userContent.css: https://www.userchrome.org/how-create-userchrome-css.html. 
+  * P.S: Use the same chrome folder which is in the repo, so that no files will be missing. Copy the the chrome folder to the Firefox profile folder that you want to modify. If the   profile already has a chrome folder, then the chrome folders should merge. Otherwise the chrome folder will be created. The chrome folder should be in the profile root, as            mentioned in the above guide.
 
 * For dark mode tooltips, [fx-autoconfig userChrome.js manager](https://github.com/MrOtherGuy/fx-autoconfig) must be setup. Codes for dark mode tooltips in chrome/resources/userChrome.ag.css
 
