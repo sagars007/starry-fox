@@ -1,5 +1,5 @@
 # starry-fox
-Firefox css stylesheets for the dark space theme. Matching many more UI elements like sidebar, contextmenus, menupopups, dialog boxes, buttons, searchboxes, tooltips, etc.. with the theme. 
+Firefox css stylesheets for the dark space theme. Matching many more UI elements like sidebar, contextmenus, menupopups, dialog boxes, buttons, searchboxes, tooltips, etc.. with the theme. [Reddit](https://www.reddit.com/r/FirefoxCSS/comments/rb4ckk/starryfox_theme/?utm_source=share&utm_medium=web2x&context=3)
 
 **To be used with the [dark space theme](https://addons.mozilla.org/en-US/firefox/addon/nicothin-space/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=rating).**
 
@@ -15,7 +15,7 @@ Firefox css stylesheets for the dark space theme. Matching many more UI elements
 
 * Minimalistic dark scroll bars using the [Dark Scroll extension](https://addons.mozilla.org/en-US/firefox/addon/dark-scroll-for-tweetdeck/).
 
-* Starting from Nightly builds 97.0a1 (18 dec 2021), scrollbar styles can be modified using ```widget.non-native-theme.scrollbar.style``` in about:config.
+* Starting from Nightly build 97.0a1 (18 dec 2021), scrollbar styles can be modified using ```widget.non-native-theme.scrollbar.style``` in about:config.
   * Corresponding values:
   ```
   0. Default platform scrollbar style.
