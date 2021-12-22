@@ -29,7 +29,7 @@ Firefox css stylesheets for the dark space theme. Matching many more UI elements
 
 ![screenshot](screenshots/starry-fox-pic.png)
 
-![screenshot](screenshots/newtabpage-display.gif)
+![screenshot](screenshots/ntp-starry-fox.gif)
 
 ![screenshot](screenshots/urlbar-results.png)
 
