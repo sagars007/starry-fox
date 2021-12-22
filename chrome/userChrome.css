@@ -122,25 +122,25 @@
 	}
 	
 	.tabbrowser-tab[class*="identity-color-"] .tab-background {
-		border-right: solid 3px var(--identity-icon-color) !important;
-		border-left: solid 3px var(--identity-icon-color) !important;
+		border-right: solid 2px var(--identity-icon-color) !important;
+		border-left: solid 2px var(--identity-icon-color) !important;
 		transition: all .15s ease-in-out !important;
 	}
 	
 	.tabbrowser-tab[class*="identity-color-"] .tab-background[selected="true"] {
-		border-right: solid 5px var(--identity-icon-color) !important;
-		border-left: solid 5px var(--identity-icon-color) !important;
+		border-right: solid 4px var(--identity-icon-color) !important;
+		border-left: solid 4px var(--identity-icon-color) !important;
 	}
 
 /*container tab label color when selected */
-.tabbrowser-tab[selected="true"][class*="identity-color-"] .tab-label {
+.tabbrowser-tab[class*="identity-color-"] .tab-label {
     color: var(--identity-tab-color) !important;
 }
 
 /*unread tabs -use tab flag extension*/
-.tabbrowser-tab[titlechanged]:not([selected="true"])  .tab-label{font-style: italic !important;color: goldenrod !important;}
+.tabbrowser-tab[titlechanged]:not([selected="true"])  .tab-label{font-style: italic !important;color: #00DDFF !important;}
 
-.tabbrowser-tab[busy]:not([selected="true"]) .tab-label{font-style: italic !important;color: goldenrod !important;}
+.tabbrowser-tab[busy]:not([selected="true"]) .tab-label{font-style: italic !important;color: #00DDFF !important;}
 
 
 
@@ -912,7 +912,7 @@ menu:not([_moz-menuactive="true"]), menuitem:not([_moz-menuactive="true"]){
   }
   
   /*newtab icon padding fix for ultra compact mode*/
-  #TabsToolbar{ --toolbarbutton-inner-padding: 5px !important; }
+  #TabsToolbar{ --toolbarbutton-inner-padding: 4px !important; }
 
 
 /*------------------------------------*/
@@ -1013,10 +1013,10 @@ menu:not([_moz-menuactive="true"]), menuitem:not([_moz-menuactive="true"]){
 		--menu-border-color: var(--panel-separator-color,Field) !important;
 	  }
 	
-	#alertImage {
-  		border-radius: 4px !important;
-	}
-	
+	  #alertImage {
+		border-radius: 4px !important;
+  	}
+
   }
 
   /*confirmation notifs- tab sent, bookmark added...*/
@@ -1024,3 +1024,16 @@ menu:not([_moz-menuactive="true"]), menuitem:not([_moz-menuactive="true"]){
 	--arrowpanel-background: #9400ff !important;
 	--arrowpanel-border-color: #9400ff !important;
   }
+
+/*titlebar min max close buttons*/
+.titlebar-buttonbox-container .titlebar-button .toolbarbutton-icon {
+	stroke: #9400ff;
+}
+
+.titlebar-buttonbox-container .titlebar-button.titlebar-close .toolbarbutton-icon {
+	stroke: #00DDFF;
+}
+
+.titlebar-buttonbox-container .titlebar-button.titlebar-close:hover .toolbarbutton-icon {
+	stroke: #ffffff;
+}
