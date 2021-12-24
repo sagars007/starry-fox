@@ -1,4 +1,4 @@
-# starry-fox
+# StarryFox ✨ 
 Firefox css stylesheets for the dark space theme. Matching many more UI elements like sidebar, contextmenus, menupopups, dialog boxes, buttons, searchboxes, tooltips, etc.. with the theme. [Reddit](https://www.reddit.com/r/FirefoxCSS/comments/rb4ckk/starryfox_theme/?utm_source=share&utm_medium=web2x&context=3)
 
 **To be used with the [dark space theme](https://addons.mozilla.org/en-US/firefox/addon/nicothin-space/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=rating).**
