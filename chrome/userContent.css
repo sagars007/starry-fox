@@ -129,8 +129,3 @@
 	border-radius: 4px !important;
 }
 
-@-moz-document url(about:blank) {
-	body {
-		background-color: #000000 !important;
-	} 
-}
