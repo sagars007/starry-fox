@@ -107,7 +107,7 @@
 	}
 
 	.top-site-outer .tile {
-		background-color: rgba(49, 49, 49, 0.5) !important;
+		background-color: rgba(49, 49, 49, 0.4) !important;
 	}
 
 	.top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) {
@@ -120,12 +120,16 @@
 
 	.search-wrapper .search-handoff-button{
 		border-radius: 40px !important;
-		background-color: rgba(49, 49, 49, 0.5) !important;
+		background-color: rgba(49, 49, 49, 0.4) !important;
 	}
 }
 
-/* in pdf viewer doorhanger menu(more tools menu)*/
+/* in pdf viewer- doorhanger menu(more tools menu) */
 .secondaryToolbarButton {
 	border-radius: 4px !important;
 }
 
+/* prevent white flash during page load */
+@-moz-document url(chrome://browser/content/browser.xhtml) {
+	browser[type="content-primary"] {background: #000000 !important}
+	}
