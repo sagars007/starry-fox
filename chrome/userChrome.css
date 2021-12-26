@@ -1037,3 +1037,19 @@ menu:not([_moz-menuactive="true"]), menuitem:not([_moz-menuactive="true"]){
 .titlebar-buttonbox-container .titlebar-button.titlebar-close:hover .toolbarbutton-icon {
 	stroke: #ffffff;
 }
+
+/* prevent white flash during page load */
+@-moz-document url(chrome://browser/content/browser.xhtml)
+{
+
+  #main-window,
+  browser[type="content-primary"],
+  browser[type="content"],
+  tabbrowser#content,
+  #content,
+  browser[type="content"] > html
+  {
+     background: #000000 !important;
+  }
+
+}
