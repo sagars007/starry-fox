@@ -12,6 +12,10 @@ Firefox css stylesheets for the dark space theme. Matching many more UI elements
 
 * For dark mode tooltips, [fx-autoconfig userChrome.js manager](https://github.com/MrOtherGuy/fx-autoconfig) must be setup. Codes for dark mode tooltips in chrome/resources/userChrome.ag.css
 
+* To match dark mode color of about:blank with the black color of the theme (#000000), following changes in about:config:
+  * Change value of ```browser.display.background_color.dark``` to ```#000000```
+  * Change value of ```browser.display.use_system_colors``` to ```false```
+
 * Unread tabs indicator functionality requires [Tab Flag extension](https://addons.mozilla.org/en-US/firefox/addon/tab-flag/).
 
 * Minimalistic dark scroll bars using the [Dark Scroll extension](https://addons.mozilla.org/en-US/firefox/addon/dark-scroll-for-tweetdeck/).
