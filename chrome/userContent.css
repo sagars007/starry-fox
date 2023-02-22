@@ -1,95 +1,97 @@
-@-moz-document url-prefix(about:home), url-prefix(about:newtab){
-	
-	.context-menu > ul > li > a, .context-menu > ul > li > button {
+@-moz-document url-prefix(about:home), url-prefix(about:newtab) {
+	.context-menu > ul > li > a,
+	.context-menu > ul > li > button {
 		border-radius: 4px !important;
 	}
-	
+
 	.context-menu > ul {
 		margin-left: 4px !important;
 		margin-right: 4px !important;
 	}
-	
+
 	.context-menu {
-		background: var(--newtab-background-color-secondary) !important; 
+		background: var(--newtab-background-color-secondary) !important;
 		border: 1px solid rgb(48, 48, 48) !important;
 	}
 	.customize-menu {
 		background-color: var(--newtab-background-color-secondary) !important;
 	}
 
-	.home-section .section .selector {border: 1px solid var(--newtab-element-secondary-hover-color) !important; background-color: var(--newtab-background-color-secondary) !important;}
-
-	
+	.home-section .section .selector {
+		border: 1px solid var(--newtab-element-secondary-hover-color) !important;
+		background-color: var(--newtab-background-color-secondary) !important;
+	}
 
 	.topsite-form .form-wrapper input[type="text"] {
-		border: 1px solid var(--newtab-element-secondary-hover-color) !important; 
+		border: 1px solid var(--newtab-element-secondary-hover-color) !important;
 	}
 
 	/*focus ring of textboxes in newtab*/
 	:focus-visible {
-		outline: 2px solid !important;
-		outline-color: var(--newtab-primary-action-background) !important;
-	  }
-
-	
+		outline: var(--newtab-primary-action-background) solid 2px !important;
+	}
 
 	.modal {
-		background: var(--newtab-background-color-secondary) !important; 
+		background: var(--newtab-background-color-secondary) !important;
 	}
 
-	input[type="text"], input[type="search"] {
+	input[type="text"],
+	input[type="search"] {
 		border-radius: 4px !important;
 	}
-	
 
 	.actions {
 		border-top: none !important;
 	}
-	
+
 	.home-section .divider {
 		border-top: none !important;
 	}
 
-	.cancel{
+	.cancel {
 		border: 1px solid var(--newtab-element-secondary-hover-color) !important;
 	}
-	.cancel:hover{
+	.cancel:hover {
 		background-color: var(--newtab-element-secondary-hover-color) !important;
 		transition: background-color 150ms !important;
 	}
 
-	.button:hover:not(.dismiss), .button:focus:not(.dismiss), .actions button:hover:not(.dismiss), .actions button:focus:not(.dismiss) {
+	.button:hover:not(.dismiss),
+	.button:focus:not(.dismiss),
+	.actions button:hover:not(.dismiss),
+	.actions button:focus:not(.dismiss) {
 		box-shadow: none !important;
 	}
 
-	.button.primary:hover, .button.done:hover, .actions button.primary:hover, .actions button.done:hover {
+	.button.primary:hover,
+	.button.done:hover,
+	.actions button.primary:hover,
+	.actions button.done:hover {
 		background-color: #80ebff !important;
 		transition: background-color 150ms !important;
-		
 	}
 
-	.wordmark { background: url("images/firefox-wordmark.svg") no-repeat center center !important;
+	.wordmark {
+		background: url("images/firefox-wordmark.svg") no-repeat center center !important;
 		background-size: 134px !important;
 		-moz-context-properties: fill !important;
-		display: inline-block !important; 
-		height: 82px !important; 
-		margin-inline-start: 16px !important; 
+		display: inline-block !important;
+		height: 82px !important;
+		margin-inline-start: 16px !important;
 		width: 134px !important;
 	}
 
 	/* show nightly logo instead of default firefox logo in newtabpage */
 	.search-wrapper .logo-and-wordmark .logo {
 		background: url("images/nightly-logo.png") no-repeat center !important;
-		background-size: auto !important;
 		background-size: 82px !important;
 		display: inline-block !important;
 		height: 82px !important;
 		width: 82px !important;
-	  }
-	
+	}
+
 	body {
-		 background-color: #000000 !important;
-		 background: url("images/Animation_Of_Stars-25-fps-compress.gif") no-repeat fixed !important;
+		background: #000000 url("images/Animation_Of_Stars-25-fps-compress.gif") no-repeat fixed !important;
 		background-size: cover !important;
 		--newtab-background-color: #000000 !important;
 		--newtab-background-color-secondary: #101010 !important;
@@ -98,12 +100,10 @@
 	body[lwt-newtab-brighttext] {
 		--newtab-background-color: #000000 !important;
 		--newtab-background-color-secondary: #101010 !important;
-
 	}
 
 	.top-site-outer .top-site-icon {
 		background-color: transparent !important;
-		
 	}
 
 	.top-site-outer .tile {
@@ -118,7 +118,7 @@
 		background-color: transparent !important;
 	}
 
-	.search-wrapper .search-handoff-button{
+	.search-wrapper .search-handoff-button {
 		border-radius: 40px !important;
 		background-color: rgba(49, 49, 49, 0.4) !important;
 	}
@@ -130,6 +130,9 @@
 }
 
 /* prevent white flash during page load */
-@-moz-document url(chrome://browser/content/browser.xhtml) {
-	browser[type="content-primary"] {background: #000000 !important}
+@-moz-document url(chrome://browser/content/browser.xhtml)
+{
+	browser[type="content-primary"] {
+		background: #000000 !important;
 	}
+}
