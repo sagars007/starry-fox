@@ -7,4 +7,5 @@ Firefox css stylesheets for the dark space theme. Matching many more UI elements
 
 ### Install
 TBD
+
 Thanks to @xarantolus for the container-tabs indicator.\
