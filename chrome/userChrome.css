@@ -243,7 +243,6 @@ toolbarbutton {
 	}  
 
   #urlbar-background,#urlbar{ 
-	
 	border-radius: 4px !important;
 	border: transparent !important;
 
@@ -887,7 +886,7 @@ menu:not([_moz-menuactive="true"]), menuitem:not([_moz-menuactive="true"]){
   
   /* vertical alignment urlbar */
   #urlbar[breakout=true]:not([open="true"]) {
-	  --urlbar-height: 20px !important;
+	  --urlbar-height: 24px !important;
 	  --urlbar-toolbar-height: 24px !important;
   }
   
