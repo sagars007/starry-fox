@@ -54,6 +54,10 @@
 .tab-icon-image {
 	opacity: 1 !important;
   }
+  /* different color for tab with blocked media */
+  .tab-icon-overlay[activemedia-blocked] {
+	 color: #12BC00 !important; 
+  }
   /* Move tab sound icon to the top left */
   .tab-icon-overlay {
 	/* top - left */
@@ -78,7 +82,7 @@
   
   /* Remove tab close button. Appear on hover with smooth transitions */
   .tabbrowser-tab:not([pinned]) .tab-close-button {
-	display: -moz-box !important;
+	display: flex !important;
 	opacity: 0;
 	visibility: collapse !important;
 	transition: all 200ms ease-in-out, fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
@@ -111,7 +115,7 @@
 	border-radius: 4px !important;
 	border: transparent !important;
   }
-	.tab-background[selected="true"] {
+	.tab-background[selected] {
 		background: linear-gradient(to right, rgb(159, 26, 255, 0.3), rgb(159, 26, 255, 0.3), rgb(138, 70, 255, 0.3), rgb(118, 93, 255, 0.3), rgb(93, 125, 255, 0.3), rgb(62, 140, 255, 0.3), rgb(28, 153, 255, 0.3), rgb(0, 165, 255, 0.3), rgb(0, 180, 255, 0.3), rgb(0, 195, 255, 0.3), rgb(0, 208, 255, 0.3), rgb(0, 221, 255, 0.3)) no-repeat !important; 
 		
 	} 
@@ -127,7 +131,7 @@
 		transition: all .15s ease-in-out !important;
 	}
 	
-	.tabbrowser-tab[class*="identity-color-"] .tab-background[selected="true"] {
+	.tabbrowser-tab[class*="identity-color-"] .tab-background[selected] {
 		border-right: solid 4px var(--identity-icon-color) !important;
 		border-left: solid 4px var(--identity-icon-color) !important;
 	}
@@ -138,9 +142,9 @@
 }
 
 /*unread tabs -use tab flag extension*/
-.tabbrowser-tab[titlechanged]:not([selected="true"])  .tab-label{font-style: italic !important;color: #00DDFF !important;}
+.tabbrowser-tab[titlechanged]:not([selected])  .tab-label{font-style: italic !important;color: #00DDFF !important;}
 
-.tabbrowser-tab[busy]:not([selected="true"]) .tab-label{font-style: italic !important;color: #00DDFF !important;}
+.tabbrowser-tab[busy]:not([selected]) .tab-label{font-style: italic !important;color: #00DDFF !important;}
 
 
 
@@ -219,7 +223,7 @@ toolbarbutton {
 
 /*link hover tooltip custom*/
 #statuspanel-label{
-	-moz-appearance: none !important;
+	appearance: none !important;
 	  color: rgba(255, 255, 255, 0.800000011920929) !important;
 	  background-color: #101010 !important;
 	border: 1px solid transparent !important;
@@ -349,8 +353,8 @@ toolbarbutton {
 /*■■■■■■■■■■■■■■■■■■■■■■■■■■ FINDBAR CODE ■■■■■■■■■■■■■■■■■■■■■■■■■■*/
 
 findbar{
-	-moz-box-ordinal-group: 0;
-	margin-bottom: -32px;
+	order: -1 !important;
+	margin-bottom: -32px !important;
 	position: relative;
 	border-top-width: 0 !important;
 	padding: 0 !important;
@@ -359,12 +363,12 @@ findbar{
 	pointer-events: none;
 	z-index: 1;
   }
-  
+
   .findbar-container > .findbar-find-fast{
 	padding: var(--toolbarbutton-inner-padding) 1px;
 	margin: 0 !important;
   }
-  
+
   findbar[hidden]{ transform: translateY(-30px);}
   
   findbar > .findbar-container,
@@ -374,18 +378,19 @@ findbar{
 	background: var(--uc-light-bkgnd-color,var(--toolbar-bgcolor)) !important;
 	pointer-events: auto;
   }
+
   findbar > .findbar-container{
-	-moz-box-direction: reverse;
-	
+	flex-direction: row-reverse;
+	height: initial !important;	
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
   }
-  
+
   .findbar-find-status{
-	display: -moz-box;
+	display: flex;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	-moz-box-flex: 1;
+	flex-grow: 1;
   }
   
   .findbar-closebutton{
@@ -398,25 +403,26 @@ findbar{
 
 	padding: 5px !important;
   }
+
   .findbar-closebutton > image{ padding: 3px }
+
   .findbar-closebutton:hover > image{
 	background: var(--toolbarbutton-hover-background) !important;
 	border-radius: 4px
   }
+
+
   findbar > .findbar-container > hbox{ margin: 0 5px }
-  
+
   findbar::before{
 	content:"";
-	display: -moz-box;
-	-moz-box-flex: 100;
+	display: flex;
+	flex-grow: 1;
   }
-  
+
   findbar{
 	margin-right: 16px;
-	
   }
-
-
 
 .findbar-textbox{
 	border-radius: 4px !important;
@@ -462,7 +468,7 @@ findbar{
 
 
 #sidebar-search-container #search-box {
-	-moz-appearance: none !important;
+	appearance: none !important;
 	background-color: #000000 !important;
 	border-radius: 4px !important;
 	/*border-top: 2px solid #000000 !important;
@@ -476,7 +482,7 @@ findbar{
   }
 
   #sidebar-search-container #search-box:focus {
-	-moz-appearance: none !important;
+	appearance: none !important;
 	background-color: rgb(17, 17, 17) !important;
 	border-radius: 4px !important;
 	/*border-top: 2px solid #313131 !important;
@@ -528,7 +534,7 @@ findbar{
 
  /* search textbox of synced tabs sidebar */
   search-textbox {
-		-moz-appearance: none !important;
+		appearance: none !important;
 		--focus-outline-color: transparent !important;
 		background-color: #000000 !important;
 		border-radius: 4px !important;
@@ -541,7 +547,7 @@ findbar{
     }
 
 	search-textbox:focus {
-		-moz-appearance: none !important;
+		appearance: none !important;
 		background-color: rgb(17, 17, 17) !important;
 		border-radius: 4px !important;
 		border: transparent !important;
@@ -761,7 +767,7 @@ menu:not([_moz-menuactive="true"]), menuitem:not([_moz-menuactive="true"]){
 	  }
 
 	  #openHandler {
-		-moz-appearance: none !important;
+		appearance: none !important;
 		background: #101010 !important;
 		color: rgba(255, 255, 255, 0.800000011920929) !important;
 		border-radius: 4px !important;
@@ -775,7 +781,7 @@ menu:not([_moz-menuactive="true"]), menuitem:not([_moz-menuactive="true"]){
 	}
 
 	#openHandlerBox{
-		-moz-appearance: none !important;
+		appearance: none !important;
 		background: #101010 !important;
 		color: rgba(255, 255, 255, 0.800000011920929) !important;
 		border: 1px solid rgb(48, 48, 48) !important;
@@ -878,7 +884,7 @@ menu:not([_moz-menuactive="true"]), menuitem:not([_moz-menuactive="true"]){
   
   /* green tab attention icon */
   /* in console for testing: var titlechanger = window.setInterval(function(){document.title=document.title+'0';}, 5000); */
-  .tabbrowser-tab:is([image], [pinned]) > .tab-stack > .tab-content[attention]:not([selected="true"]), .tabbrowser-tab > .tab-stack > .tab-content[pinned][titlechanged]:not([selected="true"]) {
+  .tabbrowser-tab:is([image], [pinned]) > .tab-stack > .tab-content[attention]:not([selected]), .tabbrowser-tab > .tab-stack > .tab-content[pinned][titlechanged]:not([selected]) {
 	background-position-x: left 2px !important;
 	background-position-y: bottom 12.5px !important;
   }
